@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Homepage - Hoogste prioriteit -->
+    <url>
+        <loc>https://darmona.nl/</loc>
+        <lastmod>2026-03-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Overlegruimten - Belangrijke landingspagina -->
+    <url>
+        <loc>https://darmona.nl/overlegruimten.html</loc>
+        <lastmod>2026-03-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Events & Activiteiten - Belangrijke landingspagina -->
+    <url>
+        <loc>https://darmona.nl/events.html</loc>
+        <lastmod>2026-03-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Reserveren - Belangrijke conversie pagina -->
+    <url>
+        <loc>https://darmona.nl/reserveren.html</loc>
+        <lastmod>2026-03-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    
+    <!-- Over ons -->
+    <url>
+        <loc>https://darmona.nl/over.html</loc>
+        <lastmod>2026-03-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Galerij - Visuele content is belangrijk voor vindbaarheid -->
+    <url>
+        <loc>https://darmona.nl/galerij.html</loc>
+        <lastmod>2026-03-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Contact - Conversie pagina -->
+    <url>
+        <loc>https://darmona.nl/contact.html</loc>
+        <lastmod>2026-03-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- FAQ - Veel bezocht, belangrijk voor SEO -->
+    <url>
+        <loc>https://darmona.nl/veelgestelde-vragen.html</loc>
+        <lastmod>2026-03-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

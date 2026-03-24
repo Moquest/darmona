@@ -1,0 +1,385 @@
+/* ==========================================
+   DAR MONA - MAIN STYLESHEET
+   ========================================== */
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cream: #FBF7F1;
+    --terracotta: #9B4A2E;
+    --gold: #B8935A;
+    --dark: #2C2520;
+    --text: #4A4441;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: var(--text);
+    line-height: 1.7;
+    background: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(155, 74, 46, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--terracotta);
+    text-decoration: none;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-icon {
+    width: 130px;
+    height: 130px;
+}
+
+.logo-text {
+    display: inline;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 400;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a:hover {
+    color: var(--terracotta);
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--terracotta);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* Mobile Menu */
+.mobile-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.mobile-toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--dark);
+    transition: all 0.3s ease;
+}
+
+.mobile-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 2rem 4%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.mobile-nav.active {
+    display: block;
+}
+
+.mobile-nav ul {
+    list-style: none;
+}
+
+.mobile-nav a {
+    display: block;
+    padding: 1rem 0;
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--cream);
+    transition: color 0.3s ease;
+}
+
+.mobile-nav a:hover {
+    color: var(--terracotta);
+}
+
+/* Social Media Float Buttons */
+.social-float-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+.social-float {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.social-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.social-float svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+}
+
+.whatsapp-float {
+    background: #25D366;
+}
+
+.whatsapp-float:hover {
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.instagram-float {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.snapchat-float {
+    background: #FFFC00;
+}
+
+.snapchat-float svg {
+    fill: black;
+}
+
+.tiktok-float {
+    background: #000000;
+}
+
+.tiktok-float:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 4rem 4% 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand h3 {
+    font-size: 1.8rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    line-height: 1.8;
+}
+
+.footer-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--terracotta);
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    border: 1px solid var(--terracotta);
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--terracotta);
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    color: var(--terracotta);
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    border: 1px solid var(--terracotta);
+    letter-spacing: 0.5px;
+}
+
+.btn-secondary:hover {
+    background: var(--terracotta);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: flex;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .social-float-container {
+        bottom: 20px;
+        right: 20px;
+        gap: 12px;
+    }
+
+    .social-float {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-float svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Fix voor hero sections - genoeg ruimte boven nav */
+section.hero,
+section[style*="padding: 12rem"],
+section[style*="padding: 14rem"] {
+    padding-top: 14rem !important;
+}
+
+@media (max-width: 768px) {
+    section.hero,
+    section[style*="padding: 12rem"],
+    section[style*="padding: 14rem"] {
+        padding-top: 10rem !important;
+    }
+}
+
+/* Hero h1 - zorg dat titel niet wordt afgeknipt */
+section.hero h1 {
+    margin-top: 0;
+    padding-top: 0;
+}

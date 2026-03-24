@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="256" cy="256" r="250" fill="#FBF7F1"/>
+    <circle cx="256" cy="256" r="243" fill="none" stroke="#9B4A2E" stroke-width="4"/>
+    <text x="256" y="310" 
+          font-family="Cormorant Garamond, serif" 
+          font-size="200" 
+          font-weight="400"
+          text-anchor="middle" 
+          fill="#9B4A2E"
+          letter-spacing="3">DM</text>
+</svg>

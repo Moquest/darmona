@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Blokkeer bedankt pagina (geen SEO waarde)
+Disallow: /bedankt.html
+
+# Sitemap locatie
+Sitemap: https://darmona.nl/sitemap.xml
