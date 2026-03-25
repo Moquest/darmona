@@ -1,0 +1,136 @@
+/* ============================================
+   DARMONA BUGFIX CSS - v1.1 - 2026
+   Automatisch geladen via alle HTML pagina's
+   ============================================ */
+
+/* ---- FIX 1: Mobile toggle verborgen op desktop ---- */
+@media (min-width: 969px) {
+    .mobile-toggle {
+        display: none !important;
+    }
+    .mobile-nav {
+        display: none !important;
+    }
+}
+
+/* ---- FIX 2: Social float knoppen overlappen content niet meer ---- */
+.social-float-container {
+    position: fixed;
+    right: 16px;
+    bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 500;
+}
+
+.social-float {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+.social-float:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.social-float svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}
+
+.whatsapp-float  { background: #25D366; }
+.instagram-float { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.tiktok-float    { background: #000000; }
+.snapchat-float  { background: #FFFC00; }
+.snapchat-float svg { fill: #000000; }
+
+@media (max-width: 768px) {
+    .social-float-container {
+        right: 8px;
+        bottom: 80px;
+        gap: 7px;
+    }
+    .social-float {
+        width: 38px;
+        height: 38px;
+        opacity: 0.8;
+    }
+    .social-float svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* ---- FIX 3: Label-waarde alignment in zaalkaarten ---- */
+.detail-item {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    gap: 1rem;
+}
+
+.detail-label {
+    flex-shrink: 0;
+    min-width: 90px;
+}
+
+.detail-value {
+    text-align: right;
+}
+
+/* ---- FIX 4: Hero knoppen overlappen sectie eronder niet meer ---- */
+.hero {
+    height: auto !important;
+    min-height: 100vh;
+    padding-bottom: 4rem !important;
+}
+
+@media (max-width: 968px) {
+    .hero {
+        min-height: auto !important;
+        padding-bottom: 3rem !important;
+    }
+
+    /* Knoppen netjes onder elkaar op mobiel */
+    .hero-text .btn-primary,
+    .hero-text .btn-secondary {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin-left: 0 !important;
+        margin-top: 1rem !important;
+        box-sizing: border-box;
+    }
+}
+
+/* ---- FIX 5: Contact formulier grid crasht niet op smal mobiel ---- */
+@media (max-width: 600px) {
+    /* Override de minmax(500px) die horizontaal scrollen veroorzaakt */
+    [style*="minmax(500px"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Expliciete fix voor de contact formulier grid */
+.contact-forms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+/* ---- FIX 6: All-inclusive image grid mobiel ---- */
+@media (max-width: 768px) {
+    [style*="grid-template-columns: repeat(3, 1fr)"] {
+        grid-template-columns: 1fr !important;
+    }
+}
