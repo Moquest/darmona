@@ -1,4 +1,4 @@
-name: Inject Bugfix in alle HTML pagina's
+name: Inject Bugfix
 
 on:
   workflow_dispatch:
@@ -8,40 +8,28 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Patch alle HTML bestanden
+      - uses: actions/checkout@v4
+      - name: Patch HTML
         run: |
-          python3 << 'EOF'
-          import re, os, glob
-
-          SNIPPET = '<link rel="stylesheet" href="css/bugfix.css">\n    <script src="js/bugfix.js" defer></script>'
-
-          def fix_html(content, filename):
-              if 'bugfix.css' not in content:
-                  content = content.replace('</head>', f'    {SNIPPET}\n</head>', 1)
-              content = re.sub(r'&copy; 2025', '&copy; 2026', content)
-              content = content.replace('href="tarieven.html"', 'href="events.html"')
-              if 'contact.html' in filename:
-                  content = content.replace('minmax(500px, 1fr)', 'minmax(300px, 1fr)')
-              return content
-
+          python3 - << 'EOF'
+          import re, glob
+          SNIPPET = '    <link rel="stylesheet" href="css/bugfix.css">\n    <script src="js/bugfix.js" defer></script>'
           for fn in glob.glob('*.html'):
-              with open(fn, 'r', encoding='utf-8') as f:
-                  content = f.read()
-              fixed = fix_html(content, fn)
-              with open(fn, 'w', encoding='utf-8') as f:
-                  f.write(fixed)
-              print(f"Gepatcht: {fn}")
+              c = open(fn, encoding='utf-8').read()
+              if 'bugfix.css' not in c:
+                  c = c.replace('</head>', SNIPPET + '\n</head>', 1)
+              c = c.replace('&copy; 2025', '&copy; 2026')
+              c = c.replace('href="tarieven.html"', 'href="events.html"')
+              if 'contact' in fn:
+                  c = c.replace('minmax(500px, 1fr)', 'minmax(300px, 1fr)')
+              open(fn, 'w', encoding='utf-8').write(c)
+              print('Gepatcht:', fn)
           EOF
-
-      - name: Commit en push
+      - name: Commit
         run: |
-          git config user.name "Dar Mona Bugfix Bot"
+          git config user.name "bot"
           git config user.email "bot@darmona.nl"
           git add -A
-          git diff --cached --quiet || git commit -m "Bugfix: social buttons, labels, copyright, tarieven link"
+          git diff --cached --quiet || git commit -m "Bugfix alle HTML paginas"
           git push
