@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
     <meta name="description" content="Neem contact op met Dar Mona. Griftdijk 113, Nijmegen. Tel: 06 34 94 53 29. Email: info@darmona.nl. Vraag vrijblijvend een offerte aan.">
     <meta name="keywords" content="evenementenlocatie Nijmegen, feestzaal Nijmegen, bruiloft locatie, culturele evenementen, Griftdijk, Lalla, Sidi, all inclusive">
     <meta name="author" content="Dar Mona">
-    
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://darmona.nl/contact.html">
     <meta property="og:title" content="Contact Dar Mona - We helpen u graag">
     <meta property="og:description" content="Neem contact op met Dar Mona. Griftdijk 113, Nijmegen. Tel: 06 34 94 53 29. Email: info@darmona.nl. Vraag vrijblijvend een offerte aan.">
     <meta property="og:image" content="https://darmona.nl/images/lalla-elegant-01.jpg">
-    
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Contact Dar Mona - We helpen u graag">
     <meta property="twitter:description" content="Neem contact op met Dar Mona. Griftdijk 113, Nijmegen. Tel: 06 34 94 53 29. Email: info@darmona.nl. Vraag vrijblijvend een offerte aan.">
     <meta property="twitter:image" content="https://darmona.nl/images/lalla-elegant-01.jpg">
-    
-    <!-- Structured Data -->
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -43,10 +36,9 @@
       "maximumAttendeeCapacity": 80
     }
     </script>
-    
+
     <title>Contact - Dar Mona Evenementenlocatie Nijmegen</title>
-    
-    <!-- Google Analytics -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EN2QGH1M7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -54,8 +46,7 @@
         gtag('js', new Date());
         gtag('config', 'G-0EN2QGH1M7');
     </script>
-    
-    <!-- Microsoft Clarity -->
+
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -63,23 +54,16 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "vu83lrxgzf");
     </script>
-    
-    <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bugfix.css">
+    <script src="js/bugfix.js" defer></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --cream: #FBF7F1;
             --terracotta: #9B4A2E;
@@ -87,307 +71,62 @@
             --dark: #2C2520;
             --text: #4A4441;
         }
-
-        body {
-            font-family: 'Jost', sans-serif;
-            color: var(--text);
-            line-height: 1.7;
-            background: white;
+        body { font-family: 'Jost', sans-serif; color: var(--text); line-height: 1.7; background: white; }
+        h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 400; line-height: 1.2; }
+        .navbar { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.98); z-index: 1000; border-bottom: 1px solid rgba(155,74,46,0.1); box-shadow: 0 2px 20px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 1.5rem 4%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 500; color: var(--terracotta); text-decoration: none; letter-spacing: 3px; text-transform: uppercase; }
+        .nav-menu { display: flex; gap: 2.5rem; list-style: none; }
+        .nav-menu a { text-decoration: none; color: var(--dark); font-weight: 400; font-size: 0.95rem; transition: color 0.3s ease; }
+        .nav-menu a:hover { color: var(--terracotta); }
+        .page-header { padding: 12rem 4% 6rem; background: var(--cream); text-align: center; }
+        .page-header h1 { font-size: 4rem; color: var(--dark); margin-bottom: 1.5rem; }
+        .page-header p { font-size: 1.1rem; max-width: 700px; margin: 0 auto; line-height: 1.9; }
+        .contact-section { padding: 6rem 4%; background: white; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 400; color: var(--dark); }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%; padding: 1rem; border: 1px solid rgba(155,74,46,0.2);
+            font-family: 'Jost', sans-serif; font-size: 1rem; transition: border-color 0.3s ease; background: white;
         }
-
-        h1, h2, h3, h4 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 400;
-            line-height: 1.2;
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.98);
-            z-index: 1000;
-            border-bottom: 1px solid rgba(155, 74, 46, 0.1);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.5rem 4%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.6rem;
-            font-weight: 500;
-            color: var(--terracotta);
-            text-decoration: none;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-
-        .nav-menu {
-            display: flex;
-            gap: 2.5rem;
-            list-style: none;
-        }
-
-        .nav-menu a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 400;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-        }
-
-        .nav-menu a:hover {
-            color: var(--terracotta);
-        }
-
-        .page-header {
-            padding: 12rem 4% 6rem;
-            background: var(--cream);
-            text-align: center;
-        }
-
-        .page-header h1 {
-            font-size: 4rem;
-            color: var(--dark);
-            margin-bottom: 1.5rem;
-        }
-
-        .page-header p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.9;
-        }
-
-        .contact-section {
-            padding: 6rem 4%;
-            background: white;
-        }
-
-        .contact-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 6rem;
-        }
-
-        .contact-info h2 {
-            font-size: 2.5rem;
-            color: var(--dark);
-            margin-bottom: 2rem;
-        }
-
-        .info-item {
-            margin-bottom: 3rem;
-        }
-
-        .info-item h3 {
-            font-size: 1.5rem;
-            color: var(--terracotta);
-            margin-bottom: 1rem;
-        }
-
-        .info-item p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-
-        .info-item a {
-            color: var(--terracotta);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .info-item a:hover {
-            color: var(--gold);
-        }
-
-        .contact-form h2 {
-            font-size: 2.5rem;
-            color: var(--dark);
-            margin-bottom: 2rem;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 400;
-            color: var(--dark);
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 1rem;
-            border: 1px solid rgba(155, 74, 46, 0.2);
-            font-family: 'Jost', sans-serif;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-            background: white;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--terracotta);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 150px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-        }
-
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--terracotta); }
+        .form-group textarea { resize: vertical; min-height: 150px; }
         .btn-primary {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background: var(--terracotta);
-            color: white;
-            text-decoration: none;
-            font-weight: 400;
-            transition: all 0.3s ease;
-            border: 1px solid var(--terracotta);
-            letter-spacing: 0.5px;
-            cursor: pointer;
-            font-family: 'Jost', sans-serif;
-            font-size: 1rem;
+            display: inline-block; padding: 1rem 2.5rem; background: var(--terracotta); color: white;
+            text-decoration: none; font-weight: 400; transition: all 0.3s ease; border: 1px solid var(--terracotta);
+            letter-spacing: 0.5px; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 1rem;
         }
+        .btn-primary:hover { background: transparent; color: var(--terracotta); }
+        .map-section { padding: 6rem 4%; background: var(--cream); }
+        footer { background: var(--dark); color: rgba(255,255,255,0.8); padding: 4rem 4% 2rem; }
+        .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .footer-brand h3 { font-size: 1.8rem; color: var(--gold); margin-bottom: 1rem; }
+        .footer-links h4 { font-size: 1.2rem; margin-bottom: 1.5rem; color: white; }
+        .footer-links ul { list-style: none; }
+        .footer-links a { color: rgba(255,255,255,0.8); text-decoration: none; display: block; margin-bottom: 0.8rem; transition: color 0.3s ease; }
+        .footer-links a:hover { color: var(--gold); }
+        .footer-bottom { max-width: 1200px; margin: 2rem auto 0; text-align: center; font-size: 0.9rem; opacity: 0.7; }
 
-        .btn-primary:hover {
-            background: transparent;
-            color: var(--terracotta);
-        }
-
-        .map-section {
-            padding: 6rem 4%;
+        /* Tijdslot info blok */
+        .tijdslot-info {
             background: var(--cream);
-        }
-
-        .map-section h2 {
-            text-align: center;
-            font-size: 3rem;
-            color: var(--dark);
-            margin-bottom: 3rem;
-        }
-
-        .map-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            aspect-ratio: 16/9;
-            background: var(--cream);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border-left: 3px solid var(--gold);
+            padding: 0.8rem 1rem;
+            margin-top: 0.5rem;
+            font-size: 0.88rem;
             color: var(--text);
-            font-size: 1.1rem;
-            border: 1px solid rgba(155, 74, 46, 0.15);
-        }
-
-        footer {
-            background: var(--dark);
-            color: rgba(255, 255, 255, 0.8);
-            padding: 4rem 4% 2rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 4rem;
-            padding-bottom: 3rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .footer-brand h3 {
-            font-size: 1.8rem;
-            color: var(--gold);
-            margin-bottom: 1rem;
-        }
-
-        .footer-brand p {
-            line-height: 1.8;
-        }
-
-        .footer-links h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            color: white;
-        }
-
-        .footer-links ul {
-            list-style: none;
-        }
-
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.8rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--gold);
-        }
-
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 2rem auto 0;
-            text-align: center;
-            font-size: 0.9rem;
-            opacity: 0.7;
+            display: none;
         }
 
         @media (max-width: 968px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .mobile-toggle {
-                display: flex;
-            }
-
-            .page-header h1 {
-                font-size: 2.5rem;
-            }
-
-            .contact-container,
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
+            .nav-menu { display: none; }
+            .mobile-toggle { display: flex; }
+            .page-header h1 { font-size: 2.5rem; }
+            .footer-content { grid-template-columns: 1fr; gap: 2rem; }
         }
     </style>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="images/logo.svg">
-    <link rel="stylesheet" href="css/bugfix.css">
-    <script src="js/bugfix.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -406,9 +145,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="mobile-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
@@ -418,31 +155,29 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="over.html">Over</a></li>
             <li><a href="overlegruimten.html">Overlegruimten</a></li>
-                <li><a href="events.html">Events &amp; Activiteiten</a></li>
+            <li><a href="events.html">Events &amp; Activiteiten</a></li>
             <li><a href="galerij.html">Galerij</a></li>
-                <li><a href="veelgestelde-vragen.html">FAQ</a></li>
+            <li><a href="veelgestelde-vragen.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
     <section class="page-header">
-        <h1>Contact & Reserveren</h1>
+        <h1>Contact &amp; Reserveren</h1>
         <p>Heeft u een vraag of wilt u direct reserveren? Kies hieronder.</p>
     </section>
 
     <section class="contact-section">
         <div style="max-width: 1400px; margin: 0 auto; padding: 0 4%;">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-bottom: 4rem;">
-                
+
                 <!-- FORMULIER 1: Algemene Vraag -->
                 <div style="background: var(--cream); padding: 2.5rem; border-radius: 12px;">
                     <h2 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 1rem;">Algemene Vraag</h2>
                     <p style="margin-bottom: 2rem; color: var(--text);">Voor vragen, offertes of bezichtigingen</p>
-                    
                     <form name="contact" method="POST" action="/bedankt.html" data-netlify="true" netlify-honeypot="bot-field">
                         <input type="hidden" name="form-name" value="contact">
                         <p style="display: none;"><label>Don't fill: <input name="bot-field" /></label></p>
-                        
                         <div class="form-group">
                             <label for="name">Naam *</label>
                             <input type="text" id="name" name="name" required>
@@ -477,11 +212,9 @@
                 <div style="background: white; padding: 2.5rem; border-radius: 12px; border: 2px solid var(--cream);">
                     <h2 style="font-family: 'Cormorant Garamond', serif; margin-bottom: 1rem;">Direct Reserveren</h2>
                     <p style="margin-bottom: 2rem; color: var(--text);">Voor directe reserveringsaanvragen</p>
-                    
-                    <form name="reservering" method="POST" action="/bedankt.html" data-netlify="true" netlify-honeypot="bot-field2">
+                    <form id="reserveringsFormulier" name="reservering" method="POST" action="/bedankt.html" data-netlify="true" netlify-honeypot="bot-field2">
                         <input type="hidden" name="form-name" value="reservering">
                         <p style="display: none;"><label>Don't fill: <input name="bot-field2" /></label></p>
-                        
                         <div class="form-group">
                             <label for="res-name">Naam *</label>
                             <input type="text" id="res-name" name="name" required>
@@ -527,11 +260,27 @@
                             <input type="date" id="date" name="date" required>
                         </div>
                         <div class="form-group">
-                            <label for="gewenste_tijd">Gewenste Tijd *</label>
-                            <input type="text" id="gewenste_tijd" name="gewenste_tijd" required placeholder="Bijv: zaterdagmiddag, 18-23, ochtend">
-                            <small style="display: block; margin-top: 0.5rem; font-size: 0.9rem; color: var(--text);">
-                                Voorbeelden: ochtend, middag, avond, zaterdagmiddag, 14:00-18:00
-                            </small>
+                            <label for="gewenste_tijd">Tijdslot *</label>
+                            <select id="gewenste_tijd" name="gewenste_tijd" required onchange="toonTijdslotInfo(this.value)">
+                                <option value="">— Kies een tijdslot —</option>
+                                <optgroup label="Doordeweeks (ma-do)">
+                                    <option value="ochtend|09:00|13:00">Ochtend (09:00 – 13:00)</option>
+                                    <option value="middag|13:00|17:00">Middag (13:00 – 17:00)</option>
+                                    <option value="avond|17:00|22:00">Avond (17:00 – 22:00)</option>
+                                    <option value="hele_dag|09:00|22:00">Hele dag (09:00 – 22:00)</option>
+                                </optgroup>
+                                <optgroup label="Vrijdag">
+                                    <option value="vrijdag_ochtend|09:00|13:00">Ochtend (09:00 – 13:00)</option>
+                                    <option value="vrijdag_middag|13:00|15:00">Middag (13:00 – 15:00)</option>
+                                    <option value="vrijdag_avond|16:00|23:00">Avond (16:00 – 23:00)</option>
+                                </optgroup>
+                                <optgroup label="Zaterdag &amp; Zondag">
+                                    <option value="weekend_middag|10:00|15:00">Middag (10:00 – 15:00)</option>
+                                    <option value="weekend_avond|16:00|23:00">Avond (16:00 – 23:00)</option>
+                                    <option value="weekend_hele_dag|10:00|23:00">Hele dag (10:00 – 23:00)</option>
+                                </optgroup>
+                            </select>
+                            <div class="tijdslot-info" id="tijdslotInfo"></div>
                         </div>
                         <div class="form-group">
                             <label for="guests">Aantal Gasten *</label>
@@ -551,32 +300,24 @@
             </div>
         </div>
 
-        <!-- Contact Info Below -->
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Contactgegevens</h2>
-                
-                <div class="info-item">
-                    <h3>Email</h3>
-                    <p><a href="mailto:info@darmona.nl">info@darmona.nl</a></p>
+        <!-- Contact Info -->
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 4%;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
+                <div>
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--terracotta); margin-bottom: 1rem;">Email</h3>
+                    <p><a href="mailto:info@darmona.nl" style="color: var(--terracotta); text-decoration: none;">info@darmona.nl</a></p>
                 </div>
-
-                <div class="info-item">
-                    <h3>Telefoon</h3>
-                    <p><a href="tel:+31634945329">06 34 94 53 29</a></p>
+                <div>
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--terracotta); margin-bottom: 1rem;">Telefoon</h3>
+                    <p><a href="tel:+31634945329" style="color: var(--terracotta); text-decoration: none;">06 34 94 53 29</a></p>
                 </div>
-
-                <div class="info-item">
-                    <h3>Adres</h3>
-                    <p>Griftdijk 113<br>
-                    6515 AE Nijmegen</p>
-                    <p style="margin-top: 0.5rem; font-size: 0.95rem;">Met eigen parkeergelegenheid</p>
+                <div>
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--terracotta); margin-bottom: 1rem;">Adres</h3>
+                    <p>Griftdijk 113<br>6515 AE Nijmegen<br><small>Met eigen parkeergelegenheid</small></p>
                 </div>
-
-                <div class="info-item">
-                    <h3>Bezichtigingen</h3>
-                    <p>Op afspraak<br>
-                    Maandag t/m zondag</p>
+                <div>
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--terracotta); margin-bottom: 1rem;">Bezichtigingen</h3>
+                    <p>Op afspraak<br>Maandag t/m zondag</p>
                 </div>
             </div>
         </div>
@@ -584,30 +325,19 @@
 
     <section class="map-section">
         <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: var(--dark);">Onze Locatie</h2>
-        
-        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 3rem;">
-            <iframe 
-                src="https://www.google.com/maps?q=Griftdijk+113,+6515+AE+Nijmegen&output=embed"
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
+        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 3rem; max-width: 1200px; margin-left: auto; margin-right: auto;">
+            <iframe src="https://www.google.com/maps/embed?q=Griftdijk+113,+Nijmegen,+Netherlands" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-            <div style="text-align: center; padding: 2rem; background: var(--cream); border-radius: 4px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; padding: 2rem; background: white; border-radius: 4px;">
                 <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 1rem; color: var(--terracotta);">Adres</h3>
                 <p style="margin: 0; line-height: 1.8; color: var(--text);">Griftdijk 113<br>6515 AE Nijmegen</p>
             </div>
-            
-            <div style="text-align: center; padding: 2rem; background: var(--cream); border-radius: 4px;">
+            <div style="text-align: center; padding: 2rem; background: white; border-radius: 4px;">
                 <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 1rem; color: var(--terracotta);">Parkeren</h3>
                 <p style="margin: 0; line-height: 1.8; color: var(--text);">Gratis parkeren<br>op eigen terrein</p>
             </div>
-            
-            <div style="text-align: center; padding: 2rem; background: var(--cream); border-radius: 4px;">
+            <div style="text-align: center; padding: 2rem; background: white; border-radius: 4px;">
                 <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 1rem; color: var(--terracotta);">Openbaar Vervoer</h3>
                 <p style="margin: 0; line-height: 1.8; color: var(--text);">Bushalte Griftdijk<br>op 2 min lopen</p>
             </div>
@@ -627,16 +357,16 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="over.html">Over</a></li>
                     <li><a href="overlegruimten.html">Overlegruimten</a></li>
-                <li><a href="events.html">Events &amp; Activiteiten</a></li>
+                    <li><a href="events.html">Events &amp; Activiteiten</a></li>
                     <li><a href="galerij.html">Galerij</a></li>
-                <li><a href="veelgestelde-vragen.html">FAQ</a></li>
+                    <li><a href="veelgestelde-vragen.html">FAQ</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Contact</h4>
                 <ul>
-                    <li><a href="/cdn-cgi/l/email-protection#f79e999198b79396859a989996d9999b"><span class="__cf_email__" data-cfemail="afc6c1c9c0efcbceddc2c0c1ce81c1c3">[email&#160;protected]</span></a></li>
+                    <li><a href="mailto:info@darmona.nl">info@darmona.nl</a></li>
                     <li><a href="tel:0634945329">(06) 34 94 53 29</a></li>
                     <li>Griftdijk 113</li>
                     <li>6515AE Nijmegen</li>
@@ -648,68 +378,19 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Mobile menu toggle
-        const mobileToggle = document.querySelector('.mobile-toggle');
-        const mobileNav = document.querySelector('.mobile-nav');
-
-        if (mobileToggle) {
-            mobileToggle.addEventListener('click', () => {
-                mobileToggle.classList.toggle('active');
-                mobileNav.classList.toggle('active');
-            });
-
-            // Close mobile menu when clicking a link
-            document.querySelectorAll('.mobile-nav a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileToggle.classList.remove('active');
-                    mobileNav.classList.remove('active');
-                });
-            });
-        }
-    </script>
-
-
-        <!-- Social Media Float Buttons -->
+    <!-- Social Media Float Buttons -->
     <div class="social-float-container">
-        <!-- WhatsApp -->
-        <a href="https://wa.me/31634945329?text=Hallo%20Dar%20Mona,%20ik%20heb%20interesse%20in%20jullie%20zalen!" 
-           target="_blank" 
-           class="social-float whatsapp-float"
-           aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
+        <a href="https://wa.me/31634945329?text=Hallo%20Dar%20Mona,%20ik%20heb%20interesse%20in%20jullie%20zalen!" target="_blank" class="social-float whatsapp-float" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         </a>
-        
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/darmonanijmegen" 
-           target="_blank" 
-           class="social-float instagram-float"
-           aria-label="Instagram">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
+        <a href="https://www.instagram.com/darmonanijmegen" target="_blank" class="social-float instagram-float" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         </a>
-        
-        <!-- TikTok -->
-        <a href="https://www.tiktok.com/@dar.mona.nijmegen" 
-           target="_blank" 
-           class="social-float tiktok-float"
-           aria-label="TikTok">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
-            </svg>
+        <a href="https://www.tiktok.com/@dar.mona.nijmegen" target="_blank" class="social-float tiktok-float" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
         </a>
-        
-        <!-- Snapchat -->
-        <a href="https://www.snapchat.com/add/darmonanijmegen" 
-           target="_blank" 
-           class="social-float snapchat-float"
-           aria-label="Snapchat">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.11-.052-.169-.015-.255.166-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/>
-            </svg>
+        <a href="https://www.snapchat.com/add/darmonanijmegen" target="_blank" class="social-float snapchat-float" aria-label="Snapchat">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.11-.052-.169-.015-.255.166-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg>
         </a>
     </div>
 
@@ -718,56 +399,90 @@
         <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
             <div style="flex: 1; min-width: 300px;">
                 <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
-                    Wij gebruiken cookies en vergelijkbare technologieën om uw ervaring te verbeteren en om te begrijpen hoe bezoekers onze website gebruiken. Door op "Accepteren" te klikken, gaat u akkoord met het gebruik van deze cookies.
+                    Wij gebruiken cookies en vergelijkbare technologieën om uw ervaring te verbeteren.
                     <a href="#" onclick="toggleCookieInfo(); return false;" style="color: var(--gold); text-decoration: underline; margin-left: 0.5rem;">Meer informatie</a>
                 </p>
                 <div id="cookieInfo" style="display: none; margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 4px; font-size: 0.9rem; line-height: 1.6;">
-                    <strong>Wij gebruiken de volgende cookies:</strong><br>
-                    • <strong>Google Analytics:</strong> Voor het meten van websiteverkeer en bezoekersgedrag<br>
-                    • <strong>Microsoft Clarity:</strong> Voor het begrijpen van gebruikerservaringen via heatmaps en sessie-opnames<br><br>
-                    Deze gegevens helpen ons om de website te verbeteren. U kunt cookies te allen tijde uitschakelen in uw browserinstellingen.
+                    <strong>Wij gebruiken:</strong><br>
+                    • <strong>Google Analytics:</strong> websiteverkeer meten<br>
+                    • <strong>Microsoft Clarity:</strong> gebruikerservaring verbeteren
                 </div>
             </div>
             <div style="display: flex; gap: 1rem; flex-shrink: 0;">
-                <button onclick="acceptCookies()" style="padding: 0.8rem 2rem; background: var(--terracotta); color: white; border: none; cursor: pointer; font-weight: 500; font-family: 'Jost', sans-serif; transition: all 0.3s ease;">
-                    Accepteren
-                </button>
-                <button onclick="declineCookies()" style="padding: 0.8rem 2rem; background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); cursor: pointer; font-weight: 500; font-family: 'Jost', sans-serif; transition: all 0.3s ease;">
-                    Weigeren
-                </button>
+                <button onclick="acceptCookies()" style="padding: 0.8rem 2rem; background: var(--terracotta); color: white; border: none; cursor: pointer; font-weight: 500; font-family: 'Jost', sans-serif;">Accepteren</button>
+                <button onclick="declineCookies()" style="padding: 0.8rem 2rem; background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); cursor: pointer; font-weight: 500; font-family: 'Jost', sans-serif;">Weigeren</button>
             </div>
         </div>
     </div>
 
     <script>
-        // Cookie consent functionality
+        // Datum: geen verleden datums toestaan
+        var dateInput = document.getElementById('date');
+        if (dateInput) {
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0');
+            var yyyy = today.getFullYear();
+            dateInput.min = yyyy + '-' + mm + '-' + dd;
+        }
+
+        // Tijdslot info tonen
+        function toonTijdslotInfo(value) {
+            var info = document.getElementById('tijdslotInfo');
+            if (!value || !info) return;
+            var parts = value.split('|');
+            if (parts.length === 3) {
+                info.style.display = 'block';
+                info.innerHTML = '&#128337; ' + parts[1] + ' &ndash; ' + parts[2] + ' uur';
+            }
+        }
+
+        // Dubbele submit voorkomen
+        var formulier = document.getElementById('reserveringsFormulier');
+        if (formulier) {
+            formulier.addEventListener('submit', function(e) {
+                var btn = formulier.querySelector('button[type="submit"]');
+                btn.disabled = true;
+                btn.textContent = 'Wordt verzonden...';
+            });
+        }
+
+        // Mobile menu
+        var mobileToggle = document.querySelector('.mobile-toggle');
+        var mobileNav = document.querySelector('.mobile-nav');
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', function() {
+                mobileToggle.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+            });
+            document.querySelectorAll('.mobile-nav a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    mobileToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                });
+            });
+        }
+
+        // Cookie consent
         function toggleCookieInfo() {
             var info = document.getElementById('cookieInfo');
             info.style.display = info.style.display === 'none' ? 'block' : 'none';
         }
-
         function acceptCookies() {
             localStorage.setItem('cookieConsent', 'accepted');
             document.getElementById('cookieBanner').style.display = 'none';
-            if (typeof gtag === 'function') {
-                gtag('consent', 'update', {
-                    'analytics_storage': 'granted'
-                });
-            }
+            if (typeof gtag === 'function') gtag('consent', 'update', {'analytics_storage': 'granted'});
         }
-
         function declineCookies() {
             localStorage.setItem('cookieConsent', 'declined');
             document.getElementById('cookieBanner').style.display = 'none';
-            if (typeof gtag === 'function') {
-                gtag('consent', 'update', {
-                    'analytics_storage': 'denied'
-                });
-            }
+            if (typeof gtag === 'function') gtag('consent', 'update', {'analytics_storage': 'denied'});
         }
-
         window.addEventListener('load', function() {
             var consent = localStorage.getItem('cookieConsent');
-            if (!consent) {
-                setTimeout(function() {
-                    document.getElementById('co
+            if (!consent) setTimeout(function() { document.getElementById('cookieBanner').style.display = 'block'; }, 1000);
+            else if (consent === 'declined' && typeof gtag === 'function') gtag('consent', 'update', {'analytics_storage': 'denied'});
+        });
+    </script>
+</body>
+</html>
